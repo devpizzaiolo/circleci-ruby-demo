@@ -1,4 +1,5 @@
 jobs:
+  build:
     deploy-prod:
       docker:
       # specify the version you desire here (you might not want node)
