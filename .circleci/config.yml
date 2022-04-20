@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP “./deploy_project.sh”
-          name: "Say hello"
+          #name: "Say hello"
           command: "echo Hello, World!"
 
 # Invoke jobs via workflows
