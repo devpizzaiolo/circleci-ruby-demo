@@ -21,5 +21,6 @@ workflows:
   build-and-deploy:
     jobs:
        - deploy-prod:
-           - build
+            requires:
+                - build
     
