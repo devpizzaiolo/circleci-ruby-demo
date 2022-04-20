@@ -8,7 +8,7 @@ jobs:
         - image: circleci/node:7.10
         # Add steps to the job
         # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-      steps:
+    steps:
       
         - checkout
       
