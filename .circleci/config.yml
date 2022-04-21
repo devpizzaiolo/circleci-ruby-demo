@@ -4,6 +4,7 @@ jobs:
     docker:
       #- image: alpine:3.15
       - image: circleci/ruby:2.6.0-node-browsers-legacy
+    working_directory: ~/repo
     steps:
       - run:
           name: 'Docker Image'
