@@ -9,3 +9,9 @@ jobs:
           command: |
             echo 'Hello World!'
             echo 'This is the delivery pipeline'
+            if["CIRCLE_BRANCH"=="production"] || ["CIRCLE_BRANCH"=="staging"] || ["CIRCLE_BRANCH"=="development"]
+                TAG=$CIRCLE_BUILD_NUM
+                docker build -t pizzaiolodocker/Test:$TAG.
+                docker login -u $DOCKER_USER -p $DOCKER_PASS
+                docker push pizzaiolodocker/Test:$TAG
+                fi
